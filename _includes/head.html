@@ -59,7 +59,7 @@
     <!-- Background Image -->
     {% if site.background %}
     {% capture background %}{{ site.background }}{% endcapture %}
-    {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{http://www.accesstheanimus.com/Shroud/5.jpg}}/{{ background }}{% endcapture %}{% endunless %}
+    {% unless background contains 'http://' or background contains 'https://' %}{capture background}{{http://www.accesstheanimus.com/Shroud/5.jpg}}/{{ background }}{endcapture}{% endunless %}
     <style type="text/css">body {background-image:url(http://www.accesstheanimus.com/Shroud/5.jpg); {% unless site.tiled_bg %} background-repeat: no-repeat; background-size: cover; {% endunless %}}</style>
     {% endif %}
 
